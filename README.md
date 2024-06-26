@@ -1,6 +1,8 @@
 # SignInRiskChecker
 
-SignInRiskChecker is a PowerShell tool designed to investigate user activity in Microsoft Graph and determine if any users are at risk based on their sign-in logs and associated devices.
+SignInRiskChecker is a PowerShell tool designed to investigate user activity in Microsoft Graph and determine if any users are at risk based on their sign-in logs and associated devices. If you don't use intune, with assigned devices to users in 365, this script is probably not for you.
+
+We assume that any login that isn't associated to the assigned device is a risk, and any sign in associated with a device is not a risk. 
 
 ## Prerequisites
 
